@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+</head>
+<body>
+    <h1>MO Calculator</h1>
+	<div id= 'calculator'>
+	<form>
+	<input type= 'text' id= 'display' disabled>
+	<br>
+	<input type= 'button' value='On' id='keys' onclick= 'toScreen("On")'>
+	<input type= 'button' value='CE' id='keys' onclick= 'backSpace()'>
+	<input type= 'button' value='x^2' id='keys' onclick= 'power()'>
+	<input type= 'button' value='+' id='keys' onclick= 'toScreen("+")'>
+    <br>
+	<input type= 'button' value='9' id='keys' onclick= 'toScreen("9")'>
+	<input type= 'button' value='8' id='keys' onclick= 'toScreen("8")'>
+	<input type= 'button' value='7' id='keys' onclick= 'toScreen("7")'>
+	<input type= 'button' value='-' id='keys' onclick= 'toScreen("-")'>
+    <br>
+	<input type= 'button' value='6' id='keys' onclick= 'toScreen("6")'>
+	<input type= 'button' value='5' id='keys' onclick= 'toScreen("5")'>
+	<input type= 'button' value='4' id='keys' onclick= 'toScreen("4")'>
+	<input type= 'button' value='*' id='keys' onclick= 'toScreen("*")'>
+    <br>
+	<input type= 'button' value='3' id='keys' onclick= 'toScreen("3")'>
+	<input type= 'button' value='2' id='keys' onclick= 'toScreen("2")'>
+	<input type= 'button' value='1' id='keys' onclick= 'toScreen("1")'>
+	<input type= 'button' value='/' id='keys' onclick= 'toScreen("/")'>
+    <br>
+	<input type= 'button' value='0' id='keys' onclick= 'toScreen("0")'>
+	<input type= 'button' value='.' id='keys' onclick= 'toScreen(".")'>
+	<input type= 'button' value='=' id='equal' onclick= 'equal()'>
+	</form>
+    <h3>MO Calculator
+	
+	</div>
+
+</body>
+
+<style>
+ body{
+     background-size:cover;
+     text-align:center;	 
+ }   
+ h1{
+    color:absolute;
+	font-weight:bold;
+	font-size:3em;
+	text-shadow: 2px 4px 5px black;
+ }
+ #calculator{
+            background-color: gray;
+			width: 240px;
+			height: 280px;
+			border: 10px solid black;
+			padding: 10px;
+			border radius: 40px;
+			margin: 50px auto;
+			box shadow: 0px 0px 3px 6px #ccc;
+ }
+
+ #display{
+          margin-bottom: 20px;
+          height: 30px;
+          width: 240px;
+		  border: 1px solid px;
+		  border radius: 5px;
+		  box-shadow: 0px 0px 1px 1px black;
+		  text-align: right;
+		  font: 20px bold;
+ }
+ 
+ #keys{
+       width:41px;
+	   height: 31px;
+	   margin: 4px;
+	   box-shadow: 0px 0px 2px 1px; black;
+       border radius: 2px;
+       outline:none;	   
+ }
+          
+ #equal{
+       width:96px;
+	   height: 31px;
+	   margin: 4px;
+	   box-shadow: 0px 0px 2px 1px; black;
+       border radius: 2px;
+       outline:none;	   
+ }        
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
