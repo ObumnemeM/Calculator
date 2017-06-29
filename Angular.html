@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+    <h1>MO Calculator</h1>
+	<div id= 'calculator'>
+	<form>
+	<input type= 'text' id= 'display' disabled>
+	<br>
+	<input type= 'button' value='C' id='keys' onclick= "display.value=''">
+	<input type= 'button' value='CE' id='keys' onclick= 'backspace()'>
+	<input type= 'button' value='x^2' id='keys' onclick="display.value=Math.pow(display.value,2)">
+	<input type= 'button' value='+' id='keys' onclick="display.value+='+'">
+    <br>
+	<input type= 'button' value='9' id='keys' onclick="display.value+='9'">
+	<input type= 'button' value='8' id='keys' onclick="display.value+='8'">
+	<input type= 'button' value='7' id='keys' onclick= "display.value+='7'">
+	<input type= 'button' value='-' id='keys' onclick= "display.value+='-'">
+    <br>
+	<input type= 'button' value='6' id='keys' onclick= "display.value+='6'">
+	<input type= 'button' value='5' id='keys' onclick= "display.value+='5'">
+	<input type= 'button' value='4' id='keys' onclick= "display.value+='4'">
+	<input type= 'button' value='*' id='keys' onclick= "display.value+='*'">
+    <br>
+	<input type= 'button' value='3' id='keys' onclick="display.value+='3'">
+	<input type= 'button' value='2' id='keys' onclick= "display.value+='2'">
+	<input type= 'button' value='1' id='keys' onclick= "display.value+='1'">
+	<input type= 'button' value='/' id='keys' onclick= "display.value+='/'">
+    <br>
+	<input type= 'button' value='0' id='keys' onclick= "display.value+='0'">
+	<input type= 'button' value='.' id='keys' onclick= "display.value+='.'">
+	<input type= 'button' value='=' id='equal' onclick= "display.value=eval(display.value)">
+	</form>
+    <h3>MO Calculator
+	
+	</div>
+
+</body>
+
+
+<script>
+var box = document.getElementById('display');
+
+function backspace(){
+var num= box.value;
+var len= num.length-1;
+var newNum = num.substring(0,len);
+box.value= newNum;
+}
+function equal(){
+       
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+</html>
