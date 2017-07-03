@@ -1,18 +1,18 @@
  body{
      background-size:cover;
      text-align:center;	
-      background-color:purple;
+      background-color:#ffff90;
  }   
  h1{
-    color:absolute;
+    color:#ffffd8;
 	font-weight:bold;
 	font-size:3em;
 	text-shadow: 2px 4px 5px black;
  }
  #calculator{
-            background-color: gray;
+            background-color: #ffb66c;
 			width: 240px;
-			height: 280px;
+			height: 325px;
 			border: 10px solid black;
 			padding: 10px;
 			border-radius: 20px;
@@ -22,7 +22,7 @@
 
  #display{
           margin-bottom: 20px;
-          height: 30px;
+          height: 33px;
           width: 240px;
 		  border: 1px solid px;
 		  border radius: 5px;
@@ -32,26 +32,42 @@
  }
  
  #keys{
-       width:41px;
-	   height: 31px;
+       width:44px;
+	   height: 38px;
+	   margin: 4px;
+	   box-shadow: 0px 0px 2px 1px; white;
+       border radius: 2px;
+       outline:none;
+       background-color:black;	
+       border-radius:20px bold;	  
+	   color:white;
+ }
+ #keys:hover {
+ background-color:#ffffb4;
+ }
+          
+ #equal{
+       width:100px;
+	   height: 40px;
 	   margin: 4px;
 	   box-shadow: 0px 0px 2px 1px; black;
        border radius: 2px;
        outline:none;
-       color:black;	   
+       background-color:#ffecd8;	   
+ }        
+#equal:hover{
+ background-color:#c8ff90;	
+       	   
  }
- #keys:hover {
- background-color:yellow;
- }
-          
- #equal{
-       width:96px;
-	   height: 31px;
+ 
+#keys1{
+       width:44px;
+	   height: 42px;
 	   margin: 4px;
 	   box-shadow: 0px 0px 2px 1px; black;
        border radius: 2px;
-       outline:none;	   
- }        
-#equal:hover{
- background-color:green;	
-}
+       outline:none;
+       background-color:#800000;	
+       border-radius:20px bold;	   
+
+ }
